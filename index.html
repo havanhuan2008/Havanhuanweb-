@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#ffffff" />
-  <title>Shop Acc Game</title>
+  <title>SHOP GAME</title>
 
+  <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="stylesheet" href="./assets/css/base.css" />
-  <link rel="stylesheet" href="./assets/css/theme.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
   <link rel="stylesheet" href="./assets/css/components.css" />
-  <link rel="stylesheet" href="./assets/css/pages.css" />
+  <link rel="stylesheet" href="./assets/css/animations.css" />
 </head>
 
 <body>
@@ -19,19 +20,17 @@
     <header class="topbar">
       <div class="brand">
         <div class="logo"></div>
-        <div>
+        <div class="brand-txt">
           <div class="brand-title">SHOP GAME</div>
           <div class="brand-sub">Acc Free Fire • Liên Quân • Đột Kích</div>
         </div>
       </div>
 
       <div class="top-actions">
-        <!-- Theme toggle -->
-        <button class="icon-btn" id="btnTheme" aria-label="Đổi sáng tối" title="Sáng / Tối">
+        <button class="icon-btn" id="btnTheme" aria-label="Chỉnh sáng/tối" title="Sáng / Tối">
           <span class="ico ico-sunmoon"></span>
         </button>
-
-        <button class="icon-btn" id="btnMenu" aria-label="Mở menu">
+        <button class="icon-btn" id="btnMenu" aria-label="Menu" title="Menu">
           <span class="ico ico-menu"></span>
         </button>
       </div>
@@ -61,9 +60,11 @@
           <a class="drawer-link" href="#/home">Trang chủ</a>
           <a class="drawer-link" href="#/topup">Nạp tiền</a>
           <a class="drawer-link" href="#/orders">Đơn hàng</a>
+          <a class="drawer-link" href="#/support">Hỗ trợ</a>
           <a class="drawer-link" href="#/account">Tài khoản</a>
           <div class="divider"></div>
-          <button class="btn danger" id="btnLogout">Đăng xuất</button>
+
+          <button class="btn danger w-full" id="btnLogout">Đăng xuất</button>
         </nav>
 
         <div class="drawer-foot muted">Frontend + Mock Backend (localStorage)</div>
@@ -72,22 +73,12 @@
 
     <main id="appMain" class="main"></main>
 
-    <nav class="tabbar" aria-label="Tab">
-      <a class="tab" href="#/home" data-route="home">
-        <span class="ico ico-home"></span><span>Trang chủ</span>
-      </a>
-      <a class="tab" href="#/topup" data-route="topup">
-        <span class="ico ico-wallet"></span><span>Nạp tiền</span>
-      </a>
-      <a class="tab" href="#/orders" data-route="orders">
-        <span class="ico ico-box"></span><span>Đơn hàng</span>
-      </a>
-      <a class="tab" href="#/support" data-route="support">
-        <span class="ico ico-chat"></span><span>Hỗ trợ</span>
-      </a>
-      <a class="tab" href="#/account" data-route="account">
-        <span class="ico ico-user"></span><span>Tài khoản</span>
-      </a>
+    <nav class="tabbar">
+      <a class="tab" href="#/home" data-route="home"><span class="ico ico-home"></span><span>Trang chủ</span></a>
+      <a class="tab" href="#/topup" data-route="topup"><span class="ico ico-wallet"></span><span>Nạp tiền</span></a>
+      <a class="tab" href="#/orders" data-route="orders"><span class="ico ico-box"></span><span>Đơn hàng</span></a>
+      <a class="tab" href="#/support" data-route="support"><span class="ico ico-chat"></span><span>Hỗ trợ</span></a>
+      <a class="tab" href="#/account" data-route="account"><span class="ico ico-user"></span><span>Tài khoản</span></a>
     </nav>
   </div>
 
@@ -105,7 +96,6 @@
     </div>
   </div>
 
-  <script src="./assets/js/seed.js"></script>
-  <script src="./assets/js/bundle.js"></script>
+  <script type="module" src="./assets/js/app.js"></script>
 </body>
 </html>
