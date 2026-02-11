@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ff-001",
+    "game": "Free Fire",
+    "title": "Nick Free Fire Giá Tết",
+    "price": 50000,
+    "stock": 2495,
+    "rank": "Vàng - Kim cương",
+    "skins": 35,
+    "notes": "Có súng nâng cấp • Random đồ"
+  },
+  {
+    "id": "ff-002",
+    "game": "Free Fire",
+    "title": "Nick Giá Học Sinh",
+    "price": 25000,
+    "stock": 771,
+    "rank": "Bạc - Vàng",
+    "skins": 12,
+    "notes": "Phù hợp tân thủ"
+  },
+  {
+    "id": "ff-003",
+    "game": "Free Fire",
+    "title": "Nick Indonesia",
+    "price": 90000,
+    "stock": 59,
+    "rank": "Kim cương",
+    "skins": 65,
+    "notes": "Sever Indo • Nhiều đồ hiếm"
+  },
+  {
+    "id": "ff-004",
+    "game": "Free Fire",
+    "title": "Nick Nhân Cực VIP",
+    "price": 500000,
+    "stock": 12,
+    "rank": "Huyền thoại",
+    "skins": 180,
+    "notes": "Full set xịn • Sưu tầm"
+  },
+  {
+    "id": "lq-001",
+    "game": "Liên Quân",
+    "title": "Nick Liên Quân Tự Chọn",
+    "price": 70000,
+    "stock": 27,
+    "rank": "Bạch kim",
+    "skins": 40,
+    "notes": "Chọn tướng/skin theo kho"
+  },
+  {
+    "id": "lq-002",
+    "game": "Liên Quân",
+    "title": "Nick Liên Quân VIP",
+    "price": 350000,
+    "stock": 121,
+    "rank": "Cao thủ",
+    "skins": 120,
+    "notes": "Nhiều skin SSS"
+  },
+  {
+    "id": "dk-001",
+    "game": "Đột Kích",
+    "title": "Acc Đột Kích Full VIP",
+    "price": 199000,
+    "stock": 88,
+    "rank": "Trung tá",
+    "skins": 0,
+    "notes": "VIP + súng xịn"
+  }
+]
