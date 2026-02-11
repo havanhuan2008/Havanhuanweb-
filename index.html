@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Shop Acc Game (Frontend Demo)</title>
+
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="preload" href="./assets/css/base.css" as="style" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/animations.css" />
+</head>
+
+<body>
+  <!-- Top safe-area -->
+  <div class="safe-top"></div>
+
+  <!-- App Shell -->
+  <div class="app">
+    <!-- Header -->
+    <header class="topbar glass">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-title">SHOP GAME</div>
+          <div class="brand-sub">Acc Free Fire • Liên Quân • Đột Kích</div>
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <button class="icon-btn" id="btnMenu" aria-label="Mở menu">
+          <span class="i i-menu" aria-hidden="true"></span>
+        </button>
+        <button class="avatar-btn" id="btnAccount" aria-label="Tài khoản">
+          <span class="avatar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Drawer -->
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-backdrop" id="drawerBackdrop"></div>
+      <div class="drawer-panel">
+        <div class="drawer-head">
+          <div class="mini-user">
+            <div class="avatar lg" aria-hidden="true"></div>
+            <div>
+              <div class="mini-name" id="miniName">Khách</div>
+              <div class="mini-meta">
+                <span>Số dư:</span> <b id="miniBalance">0đ</b>
+                <span class="dot">•</span>
+                <span>ID:</span> <b id="miniId">—</b>
+              </div>
+            </div>
+          </div>
+          <button class="icon-btn" id="btnCloseDrawer" aria-label="Đóng menu">
+            <span class="i i-x" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <nav class="drawer-nav">
+          <a class="drawer-link" href="#/account">
+            <span class="i i-user" aria-hidden="true"></span>
+            Thông tin tài khoản
+          </a>
+          <a class="drawer-link" href="#/account?tab=orders">
+            <span class="i i-receipt" aria-hidden="true"></span>
+            Lịch sử mua nick
+          </a>
+          <a class="drawer-link" href="#/account?tab=deposits">
+            <span class="i i-wallet" aria-hidden="true"></span>
+            Lịch sử nạp tiền
+          </a>
+          <a class="drawer-link" href="#/support">
+            <span class="i i-help" aria-hidden="true"></span>
+            Hỗ trợ / CSKH
+          </a>
+          <div class="divider"></div>
+          <button class="btn w-full danger" id="btnLogout">
+            <span class="i i-logout" aria-hidden="true"></span>
+            Đăng xuất
+          </button>
+        </nav>
+
+        <div class="drawer-foot">
+          <div class="muted">Demo frontend-only • dữ liệu lưu trên thiết bị</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main id="appMain" class="main">
+      <!-- Router sẽ render vào đây -->
+    </main>
+
+    <!-- Bottom Tabs -->
+    <nav class="tabbar glass" aria-label="Thanh điều hướng">
+      <a class="tab" href="#/home" data-route="home">
+        <span class="i i-home" aria-hidden="true"></span>
+        <span>Trang chủ</span>
+      </a>
+      <a class="tab" href="#/topup" data-route="topup">
+        <span class="i i-money" aria-hidden="true"></span>
+        <span>Nạp tiền</span>
+      </a>
+      <a class="tab" href="#/guide" data-route="guide">
+        <span class="i i-book" aria-hidden="true"></span>
+        <span>Hướng dẫn</span>
+      </a>
+      <a class="tab" href="#/support" data-route="support">
+        <span class="i i-chat" aria-hidden="true"></span>
+        <span>Hỗ trợ</span>
+      </a>
+      <a class="tab" href="#/account" data-route="account">
+        <span class="i i-user" aria-hidden="true"></span>
+        <span>Tài khoản</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Toasts -->
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card" id="modalCard" role="document">
+      <div class="modal-head">
+        <div class="modal-title" id="modalTitle">Chi tiết</div>
+        <button class="icon-btn" id="modalClose" aria-label="Đóng">
+          <span class="i i-x" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-foot" id="modalFoot"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>
