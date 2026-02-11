@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ff-001",
+    "game": "Free Fire",
+    "title": "Nick Free Fire Giá Tết",
+    "price": 50000,
+    "stock": 2495,
+    "img": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=60",
+    "desc": "Nick random đồ, phù hợp tân thủ."
+  },
+  {
+    "id": "lq-001",
+    "game": "Liên Quân",
+    "title": "Nick Liên Quân VIP",
+    "price": 350000,
+    "stock": 121,
+    "img": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=60",
+    "desc": "Nhiều skin hiếm, rank cao."
+  },
+  {
+    "id": "dk-001",
+    "game": "Đột Kích",
+    "title": "Acc Đột Kích Full VIP",
+    "price": 199000,
+    "stock": 88,
+    "img": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=1200&q=60",
+    "desc": "VIP + súng xịn, giao nhanh."
+  }
+]
