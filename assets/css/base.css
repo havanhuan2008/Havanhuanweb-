@@ -1,0 +1,25 @@
+:root{
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  --r-lg: 22px;
+  --r: 18px;
+  --r-sm: 14px;
+
+  --dur: 220ms;
+  --ease: cubic-bezier(.2,.8,.2,1);
+  --shadow: 0 16px 40px rgba(0,0,0,.10);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit}
+.safe-top{height:var(--safe-top)}
